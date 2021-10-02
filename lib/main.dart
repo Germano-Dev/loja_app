@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loja_app/screen/products_overview.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       darkTheme: ThemeData.dark(),
-      home: HomeScreen(title: 'Flutter Demo Home Page'),
+      home: ProductsOverviewPages(),
     );
   }
 }
@@ -33,10 +34,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
         title: Text(widget.title),
       ),
-      body: Container(),
+      body: ProductsOverviewPages(),
     );
   }
 }
