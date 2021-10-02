@@ -25,11 +25,13 @@ class ProductItem extends StatelessWidget {
           leading: IconButton(
             icon: Icon(Icons.favorite),
             onPressed: () {},
+            color: Theme.of(context).accentColor,
           ),
           backgroundColor: Colors.black45,
           trailing: IconButton(
             onPressed: () {},
             icon: Icon(Icons.shopping_cart),
+            color: Theme.of(context).accentColor,
           ),
         ),
       ),
